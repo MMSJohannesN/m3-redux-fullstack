@@ -19,6 +19,7 @@ interface IProps {
 export interface IAssetsLoadedAction extends IAction {
   assets: IAssetData[]
 }
+
 reducerFunctions[ActionType.server_called] = function (newState: IState, action: IAction) {
   newState.UI.waitingForResponse = true;
   return newState;
@@ -62,4 +63,3 @@ export default class App extends React.PureComponent<IProps> {
   }
 
 }
-

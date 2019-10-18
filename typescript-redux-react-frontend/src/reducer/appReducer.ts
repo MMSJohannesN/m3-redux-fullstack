@@ -23,4 +23,3 @@ export const reducer = (state = initial, action: IAction) => {
             return newState;
     }
 }
-
